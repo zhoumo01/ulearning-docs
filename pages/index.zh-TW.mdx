@@ -1,0 +1,84 @@
+---
+title: 用於數據請求的 React Hooks 庫
+---
+
+import { Callout } from 'nextra-theme-docs'
+import Features from "components/features"
+import { Bleed } from 'nextra-theme-docs'
+
+{
+// wrapped with {} to mark it as javascript so mdx will not put it under a p tag
+}
+{<h1 className="text-center text-4xl tracking-tighter font-extrabold md:text-5xl mt-8">SWR</h1>}
+
+<Bleed>
+  <Features/>
+</Bleed>
+
+"SWR" 這個名字來自於 `stale-while-revalidate`：一種由 [HTTP RFC 5861](https://tools.ietf.org/html/rfc5861) 推廣的 HTTP 緩存失效策略。這種策略首先從緩存中返回數據（過期的），同時發送 fetch 請求（重新驗證），最後得到最新數據。
+
+<Callout emoji="✅">
+  使用 SWR，組件將會<strong>不斷地</strong>、<strong>自動</strong>獲得最新數據流。<br/>
+  UI 也會一直保持<strong>快速響應</strong>。
+</Callout>
+
+<div className="mt-16 mb-20 text-center">
+  [入門](/docs/getting-started) · [示例](/examples/basic) · [博客](/blog) · [GitHub 倉庫](https://github.com/vercel/swr)
+</div>
+
+## 概覽 [#overview]
+
+```jsx
+import useSWR from 'swr'
+
+function Profile() {
+  const { data, error, isLoading } = useSWR('/api/user', fetcher)
+
+  if (error) return <div>加載失敗</div>
+  if (isLoading) return <div>加載中...</div>
+  return <div>你好，{data.name}！</div>
+}
+```
+
+該示例中，`useSWR` hook 接受一個字符串 `key` 和一個函數 `fetcher`。`key` 是數據的唯一標識符（通常是 API URL），並傳遞給 `fetcher`。`fetcher` 可以是任何返回數據的異步函數，你可以使用原生的 fetch 或 Axios 之類的工具。
+
+基於請求的狀態，這個 hook 返回 2 個值：`data` 和 `error`。
+
+## 特性 [#features]
+
+僅需一行代碼，你就可以簡化項目中數據請求的邏輯，並立即擁有以下這些不可思議的特性：
+
+- **極速**、**輕量**、**可重用的** 數據請求
+- 內置 **緩存** 和重複請求去除
+- **實時** 體驗
+- 傳輸和協議不可知
+- 支持 SSR / ISR / SSG
+- 支持 TypeScript
+- React Native
+
+SWR 涵蓋了性能，正確性和穩定性的各個方面，以幫你建立更好的體驗：
+
+- 快速頁面導航
+- 間隔輪詢
+- 數據依賴
+- 聚焦時重新驗證
+- 網絡恢復時重新驗證
+- 本地緩存更新 (Optimistic UI)
+- 智能錯誤重試
+- 分頁和滾動位置恢復
+- React Suspense
+
+以及 [更多](/docs/getting-started)。
+
+## 社區 [#community]
+
+<p className="flex h-6 mt-4 gap-2">
+  <img alt="stars" src="https://badgen.net/github/stars/vercel/swr" />
+  <img alt="downloads" src="https://badgen.net/npm/dt/swr" />
+  <img alt="license" src="https://badgen.net/npm/license/swr" />
+</p>
+
+SWR 由 [Next.js](https://nextjs.org)（React 框架）背後的同一團隊創建。
+在 Twitter 上關注 [@vercel](https://twitter.com/vercel) 未來項目更新
+
+歡迎加入 [GitHub 上的討論](https://github.com/vercel/swr/discussions)！

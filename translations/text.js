@@ -1,6 +1,6 @@
 /**
  * @typedef {"en-US"} DefaultLocale
- * @typedef {DefaultLocale | "zh-CN" | "es-ES" | "fr-FR" | "pt-BR" | "ja" | "ko" | "ru"} Locale
+ * @typedef {DefaultLocale | "zh-CN" | "zh-TW" | "es-ES" | "fr-FR" | "pt-BR" | "ja" | "ko" | "ru" | "id-ID" | "th-TH" | "ar"} Locale
  */
 
 /** @type {Readonly<Record<Locale, string>>} */
@@ -8,23 +8,31 @@ export const languageMap = {
   "en-US": "English",
   "es-ES": "Español",
   "fr-FR": "Français",
-  "pt-BR": "Português Brasileiro",
+  "id-ID": "Bahasa Indonesia",
+  "th-TH": "ไทย",
+  "ar": "العربية",
   "zh-CN": "简体中文",
+  "zh-TW": "繁體中文",
   ja: "日本語",
   ko: "한국어",
   ru: "Русский",
+  "pt-BR": "Português Brasileiro",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const titleMap = {
-  "en-US": "React Hooks for Data Fetching",
-  "es-ES": "Biblioteca React Hooks para la obtención de datos",
-  "fr-FR": "Bibliothèque de React Hooks pour la récupération de données",
-  "pt-BR": "React Hooks para Data Fetching",
-  "zh-CN": "用于数据请求的 React Hooks 库",
-  ja: "データ取得のための React Hooks ライブラリ",
-  ko: "데이터 가져오기를 위한 React Hooks",
-  ru: "React хуки для выборки данных",
+  "en-US": "Smart Education Provider",
+  "zh-CN": "智能教育提供者",
+  "zh-TW": "智慧教育服务商",
+  "es-ES": "Proveedor de Educación Inteligente",
+  "fr-FR": "Fournisseur d'Éducation Intelligente",
+  "pt-BR": "Provedor de Educação Inteligente",
+  "ja": "スマート教育プロバイダー",
+  "ko": "스마트 교육 제공자",
+  "ru": "Провайдер Умного Образования",
+  "id-ID": "Penyedia Pendidikan Cerdas",
+  "th-TH": "ผู้ให้บริการการศึกษาอัจฉริยะ",
+  "ar": "مزود التعليم الذكي",
 };
 
 /** @type {Readonly<Record<Locale, {lightweight:string;realtime?:string;suspense?:string;pagination?:string;backendAgnostic?:string;renderingStrategies?:string;typescript?:string;remoteLocal?:string;}>>} */
@@ -83,6 +91,10 @@ export const feedbackLinkMap = {
   "zh-CN": "有疑问？给我们反馈 →",
   ko: "질문이 있으신가요? 피드백을 남겨주세요 →",
   ru: "Вопросы? Оставьте нам отзыв →",
+  "zh-TW": "有疑問？給我們反饋 →",
+  "id-ID": "Pertanyaan? Berikan kami umpan balik →",
+  "th-TH": "มีคำถาม? ให้คำติชมกับเรา →",
+  "ar": "لديك سؤال؟ أعطنا رأيك →",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
@@ -95,6 +107,10 @@ export const editTextMap = {
   ja: "Github で編集する →",
   ko: "Github에서 이 페이지 편집하기 →",
   ru: "Редактировать эту страницу на GitHub →",
+  "zh-TW": "在 GitHub 上編輯此頁面 →",
+  "id-ID": "Edit halaman ini di GitHub →",
+  "th-TH": "แก้ไขหน้านี้บน GitHub →",
+  "ar": "تحرير هذه الصفحة على جيثب →",
 };
 
 /** @type {Readonly<Record<Locale, { utmSource: string; text: string; suffix?: string | undefined }>>} */
@@ -107,6 +123,10 @@ export const footerTextMap = {
   ja: { utmSource: "swr_ja", text: "提供" },
   ko: { utmSource: "swr_ko", text: "Powered by" },
   ru: { utmSource: "swr_ru", text: "Работает на" },
+  "zh-TW": { utmSource: "swr_zh-tw", text: "由", suffix: "驅動" },
+  "id-ID": { utmSource: "swr_id-id", text: "Ditenagai oleh" },
+  "th-TH": { utmSource: "swr_th-th", text: "ขับเคลื่อนโดย" },
+  "ar": { utmSource: "swr_ar", text: "مشغل بواسطة" },
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
@@ -116,6 +136,10 @@ export const tableOfContentsTitleMap = {
   "fr-FR": "Sur cette page",
   "pt-BR": "Nessa página",
   ru: "На этой странице",
+  "zh-TW": "在此頁面上",
+  "id-ID": "Pada Halaman Ini",
+  "th-TH": "ในหน้านี้",
+  "ar": "في هذه الصفحة",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
@@ -126,6 +150,11 @@ export const searchPlaceholderMap = {
   "pt-BR": "Buscar documentação...",
   ko: "문서 검색...",
   ru: "Искать в документации...",
+  "zh-CN": "搜索文档...",
+  "zh-TW": "搜索文檔...",
+  "id-ID": "Cari dokumentasi...",
+  "th-TH": "ค้นหาเอกสาร...",
+  "ar": "بحث في التوثيق...",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
@@ -133,4 +162,9 @@ export const gitTimestampMap = {
   "en-US": "Last updated on",
   "fr-FR": "Dernière mise à jour le",
   ru: "Последнее обновление",
+  "zh-CN": "最后更新于",
+  "zh-TW": "最後更新於",
+  "id-ID": "Terakhir diperbarui pada",
+  "th-TH": "อัปเดตล่าสุดเมื่อ",
+  "ar": "آخر تحديث في",
 };

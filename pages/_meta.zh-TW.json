@@ -1,0 +1,22 @@
+{
+  "index": {
+    "title": "簡介",
+    "type": "page",
+    "display": "hidden"
+  },
+  "docs": {
+    "title": "文檔",
+    "type": "page"
+  },
+  "examples": {
+    "title": "範例",
+    "type": "page"
+  },
+  "blog": {
+    "title": "博客",
+    "type": "page",
+    "theme": {
+      "sidebar": false
+    }
+  }
+}

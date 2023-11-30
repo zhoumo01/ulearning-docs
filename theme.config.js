@@ -17,13 +17,10 @@ import {
 
 /** @type {import('nextra-theme-docs').DocsThemeConfig} */
 const themeConfig = {
-  project: {
-    link: "https://github.com/vercel/swr",
-  },
   docsRepositoryBase: "https://github.com/vercel/swr-site/blob/main",
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – SWR",
+      titleTemplate: "Ulearning - %s",
     };
   },
   toc: {
@@ -45,7 +42,7 @@ const themeConfig = {
       <>
         <Logo height={32} />
         <span
-          className="mx-2 font-extrabold hidden md:inline select-none text-blue-500 text-xl"
+          className="mx-2 font-extrabold hidden md:inline select-none text-blue-600 text-xl"
           title={`SWR: ${title}`}
         >
           Docs
