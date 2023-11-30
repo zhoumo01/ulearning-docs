@@ -43,12 +43,12 @@ const themeConfig = {
     const title = useLocalesMap(titleMap);
     return (
       <>
-        <Logo height={12} />
+        <Logo height={32} />
         <span
-          className="mx-2 font-extrabold hidden md:inline select-none"
+          className="mx-2 font-extrabold hidden md:inline select-none text-blue-500 text-xl"
           title={`SWR: ${title}`}
         >
-          SWR
+          Docs
         </span>
       </>
     );
