@@ -2,17 +2,14 @@
   "index": {
     "title": "Introduction",
     "type": "page",
-    "display": "hidden",
-    "theme": {
-      "layout": "raw"
-    }
+    "display": "hidden"
   },
   "docs": {
     "title": "Docs",
     "type": "page"
   },
   "examples": {
-    "title": "Examples",
+    "title": "Exemples",
     "type": "page"
   },
   "blog": {

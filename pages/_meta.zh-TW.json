@@ -4,6 +4,11 @@
     "type": "page",
     "display": "hidden"
   },
+  "ulearning": {
+    "title": "Ulearning",
+    "type": "page",
+    "display": "hidden"
+  },
   "docs": {
     "title": "文檔",
     "type": "page"
