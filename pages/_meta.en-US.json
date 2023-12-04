@@ -1,20 +1,49 @@
 {
+  "products": {
+    "title": "Products",
+    "type": "menu",
+    "items": {
+      "ULearning": {
+        "title": "Ulearning",
+        "href": "/ulearning/getting-started"
+      },
+      "UClass": {
+        "title": "UClass",
+        "href": "/uclass"
+      },
+      "utest": {
+        "title": "UTest Online Exam",
+        "href": "/utest"
+      }
+    }
+  },
   "index": {
     "title": "Introduction",
     "type": "page",
     "display": "hidden"
   },
+  "ulearning": {
+    "title": "ULearning",
+    "type": "page",
+    "display": "hidden"
+  },
   "docs": {
     "title": "Docs",
+    "type": "page",
+    "href": "/docs/getting-started"
+  },
+  "solutions": {
+    "title": "Solutions",
     "type": "page"
   },
-  "examples": {
-    "title": "Exemples",
+  "practices": {
+    "title": "Best Practices",
     "type": "page"
   },
   "blog": {
     "title": "Blog",
     "type": "page",
+    "href": "/blog",
     "theme": {
       "sidebar": false
     }
