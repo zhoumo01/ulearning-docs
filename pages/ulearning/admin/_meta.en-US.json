@@ -1,8 +1,7 @@
 {
-  "getting-started": "Admin Guide",
-  "teachers": "Teacher Management",
-  "courses": "Course Management",
-  "exams": "Exam Management",
-  "system": "System Configuration",
-  "data":"Data Analytic"
+  "overview": "Overview",
+  "teaching-administration": "Teaching Administration",
+  "data-and-reports": "Data and Reports",
+  "system-settings": "System Settings",
+  "lti-apps": "LTI Apps"
 }
