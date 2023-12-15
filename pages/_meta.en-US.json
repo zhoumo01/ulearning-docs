@@ -13,7 +13,7 @@
       },
       "utest": {
         "title": "UTest Online Exam",
-        "href": "/utest"
+        "href": "/utest/introduction"
       }
     }
   },
@@ -33,9 +33,9 @@
     "display": "hidden"
   },
   "docs": {
-    "title": "Docs",
+    "title": "Api Docs",
     "type": "page",
-    "href": "/docs/getting-started"
+    "href": "/docs/api"
   },
   "solutions": {
     "title": "Solutions",

@@ -2,8 +2,6 @@
   "getting-started": "Getting Started",
   "admin": "Administrator",
   "teacher": "Teacher",
-  "Student": "Student",
-  "features": "All Features",
-  "practices": "Best Practices",
+  "student": "Student",
   "terminology": "Terminology"
 }
